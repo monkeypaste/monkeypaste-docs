@@ -41,7 +41,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/monkeypaste/monkeypaste-docs'
+          editUrl: 'https://github.com/monkeypaste/monkeypaste-docs/tree/main/'
         },
         blog: {
           showReadingTime: true,
