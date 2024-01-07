@@ -1,0 +1,14 @@
+html[data-app-update-view] aside.theme-doc-sidebar-container {
+    /* hide right sidebar */
+    display: none;
+}
+
+html[data-app-update-view] div.theme-doc-toc-desktop {
+    /* hide left sidebar */
+    display: none;
+}
+
+html[data-app-update-view] div.navbar__inner {
+    /* hide search BOX (can't get to container) */
+    display: none;
+}

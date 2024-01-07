@@ -1,0 +1,16 @@
+img.thumb {
+    width: 100px;
+}
+
+img.figure.narrow {
+    width: 30%;
+}
+
+img.figure {
+    width: 50%;
+}
+
+p:has(.thumb),
+p:has(.figure) {
+    text-align: center;
+}

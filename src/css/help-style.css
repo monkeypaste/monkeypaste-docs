@@ -1,0 +1,25 @@
+html[data-help-view] {
+    --ifm-navbar-height: 0px;
+}
+
+html[data-help-view] nav.navbar.navbar--fixed-top {
+    height: 3rem;
+}
+
+html[data-help-view] nav.navbar.navbar--fixed-top .navbar__inner .navbar__items:not(.navbar__items--right) {
+    display: none;
+}
+
+html[data-help-view] nav.navbar.navbar--fixed-top .navbar__inner .navbar__items.navbar__items--right> :not(:last-child) {
+    display: none;
+}
+
+html[data-help-view] nav.navbar.navbar--fixed-top .navbar__inner .navbar__items.navbar__items--right> :last-child {
+    position: absolute;
+    left: 1rem;
+    width: 10rem;
+}
+
+html[data-help-view] footer {
+    display: none;
+}

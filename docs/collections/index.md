@@ -1,3 +1,6 @@
+---
+sidebar_position: 3
+---
 # Collections
 
 There are 3 basic types of collections to help you organize your clips:
@@ -24,4 +27,3 @@ Collections are located in the collections tab of the main window sidebar. They 
 :::tip Collection Drag-and-Drop 
 Collections can be easily moved or duplicated (+<kbd>Control</kbd> key or 2-finger) using drag-and-drop
 :::
-

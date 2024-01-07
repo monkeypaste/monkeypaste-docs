@@ -1,21 +1,22 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
+require('dotenv').config();
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const { themes } = require('prism-react-renderer');
+const lightTheme = themes.synthwave84;
+const darkTheme = themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'MonkeyPaste',
-  tagline: 'Clipboard Evolved',
+  staticDirectories: ['static'],
+  tagline: '(coming soon!)',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
-  url: 'https://monkeypaste.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  //baseUrl: `C:/Users/tkefauver/Source/Repos/MonkeyPaste/MonkeyPaste.com/build/`,
-  baseUrl: `/`,
+  // url: "https://localhost",
+  // baseUrl: "/docs/build",
+  url: "https://monkeypaste.com",
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -40,10 +41,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          //editUrl:
-          //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/monkeypaste/monkeypaste-docs'
         },
         blog: {
           showReadingTime: true,
@@ -53,7 +51,13 @@ const config = {
           //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss:
+            [
+              require.resolve('./src/css/content-styles.css'),
+              require.resolve('./src/css/custom.css'),
+              require.resolve('./src/css/help-style.css'),
+              require.resolve('./src/css/app-update-style.css'),
+            ]
         },
       }),
     ],
@@ -63,7 +67,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/monkeypaste-social-card.jpg',
+      prism: {
+        theme: lightTheme,
+        darkTheme: darkTheme,
+        additionalLanguages: ['csharp'],
+      },
       navbar: {
         title: 'MonkeyPaste',
         logo: {
@@ -78,6 +87,8 @@ const config = {
             label: 'Docs',
           },
           { to: '/blog', label: 'Blog', position: 'left' },
+          { to: '/blog', label: 'About', position: 'left' },
+          { to: '/blog', label: 'Download', position: 'right' },
           {
             href: 'https://github.com/monkeypaste',
             label: 'GitHub',
@@ -92,8 +103,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Welcome',
+                to: '/docs/welcome',
               },
             ],
           },
@@ -130,15 +141,19 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Monkey LLC, Built with Docusaurus.`,
       },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
     }),
   markdown: {
     mermaid: true,
   },
   themes: ['@docusaurus/theme-mermaid'],
+  plugins: [
+    [
+      require.resolve("@cmfcmf/docusaurus-search-local"),
+      {
+        // Options here
+      },
+    ],
+  ],
 };
 
 module.exports = config;

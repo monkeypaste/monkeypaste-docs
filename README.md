@@ -1,41 +1,21 @@
-# Website
+<p align="center">
+  <img alt="MonkeyPaste logo" src="static/img/monkey.png" width="85px" />
+  <h1 align="center">MonkeyPaste Documentation</h1>
+</p>
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+This repo holds all the docs and guides for the MonkeyPaste clipboard and automation tool, which is also accessible at [docs.monkeypaste.com](https://docs.monkeypaste.com)
 
-### Installation
+## Index
+- [Feedback](#feedback)
+- [Documentation Issues](#documentation-issues)
+- [Thanks 🍌💜](#thanks)
 
-```
-$ yarn
-```
+## Feedback
+I welcome your valuable feedback on the documentation! Please feel free to join our [Community on Telegram](https://t.me/MonkeyPaste) and send us a message. We would be delighted to hear from you and assist you with any queries or concerns you may have. 
 
-### Local Development
+## Documentation Issues
+If you come across any issues with the documentation or have a feature request related explicitly to it, we encourage you to create a new [GitHub issue](https://github.com/monkeypaste/monkeypaste-docs/issues/new). Before creating a new issue, we kindly request that you check for existing issues to avoid duplication. 
 
-```
-$ yarn start
-```
+## Thanks
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Thanks for all your contributions and efforts towards improving MonkeyPaste documentation. I thank you being part of our ✨ community ✨!

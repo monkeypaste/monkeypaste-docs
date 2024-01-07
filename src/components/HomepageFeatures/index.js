@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
+import { useHistory, useLocation } from '@docusaurus/router';
 
 const FeatureList = [
   {
@@ -35,7 +36,7 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ Svg, title, description }) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
@@ -62,3 +63,4 @@ export default function HomepageFeatures() {
     </section>
   );
 }
+
