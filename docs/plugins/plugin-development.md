@@ -15,6 +15,7 @@ Add the MonkeyPaste.Common.Plugin dll from nuget or the cli:
 dotnet add package MonkeyPaste.Common.Plugin
 ```
 
+
 :::info 
 Javascript and python plugin wrappers are currently in an alpha-stage of development. Check back at the [repo](https://github.com/monkeypaste) for more updates!
 :::
@@ -41,27 +42,27 @@ namespace MinimalExample {
 
 #### Manifest.json
 Every plugin must have a `manifest.json` file included in its bundle. At a minimum it provides basic meta and package information. But will also include rules for the types of content and parameters it can handle.
-```jsx
+
+While testing, this is a minimal `manifest.json`:
+
+```jsx title="../MinimalExample/manifest.json" 
 {
-  "title": "Hello World",
+  "title": "Minimal Example",
   "guid": "aa4ceef6-e050-4ed5-b308-7c99942436c3",
-  "packageUrl": "https://github.com/monkeypaste/MinimalExample/releases/download/v1.0.0/MinimalExample.zip",
 }
 ```
  Required Fields:
 
-| Field | Detail| Testing | Publishing|
+| Field | Detail| Test | Publish|
 | --- | --- | --- | ---|
 | title | Any name is fine but it must have one |✅|✅|
 | guid | An RFC 4122 compliant 128-bit GUID (UUID) with only letters, numbers and hyphens |✅|✅|
-| version | The default is 1.0.0 but setting blank is not valid. A major, minor, patch format is preferred. |❌|✅|
-| packageUrl | A url to a zip compressed file (.zip) of this projects build output |❌|✅|
+| version | The default is 1.0.0 but setting blank is not valid. A major, minor, patch format is required. |❌|✅|
+| packageUrl | Only needed when publishing. A url to a zip compressed file (.zip) of this projects build output |❌|✅|
 
 :::tip Guid Generator
 To get a nice `guid` or if you receive an `InvalidPlugin` error due to the `guid` value you provide,  use [www.guidgenerator.com](https://www.guidgenerator.com/online-guid-generator.aspx) with only 'Hyphens' checked (I think its default). The tool is free and what I use so it should validate fine then.
 :::
-
-
 
 #### Folder Structure
 
@@ -112,13 +113,13 @@ This is a **threading issue** between *Visual Studio* and the low-level global i
 ##### Attaching your Debugger
 After you set `debugMode` in your `manifest.json` you should see something similar to below after starting up MonkeyPaste:
 
-<p><img class="figure narrow" src="/docs/build/img/plugin_development_attach_debugger.png" /></p>
+<p><img class="figure narrow" src={require('/img/plugin_development_attach_debugger.png').default} /></p>
 
 Then in your plugin project (assuming you're using Visual Studio) select *Debug->Attach to Process...*.
-<p><img class="figure narrow" src="/docs/build/img/plugin_development_attach_debugger_vs2022_menu1.png" /></p>
+<p><img class="figure narrow" src={require('/img/plugin_development_attach_debugger_vs2022_menu1.png').default} /></p>
 
 In the *Attach to process* menu type 'MonkeyPaste' in the search box, select it and click *Attach* at the bottom.
-<p><img class="figure narrow" src="/docs/build/img/plugin_development_attach_debugger_vs2022_menu2.png" /></p>
+<p><img class="figure narrow" src={require('/img/plugin_development_attach_debugger_vs2022_menu2.png').default} /></p>
 
 Now anytime code from your plugin is invoked your breakpoints will be hit.
 
@@ -166,7 +167,16 @@ These are plugins I've made and they all should be available from the *Plugin Br
 |[FileConverter](https://github.com/monkeypaste/FileConverter)|
 |[ImageAnnotator](https://github.com/monkeypaste/ImageAnnotator)|
 |[QrCoder](https://github.com/monkeypaste/QrCoder)|
+|[TextToSpeech](https://github.com/monkeypaste/TextToSpeech)|
+|[TextTranslator](https://github.com/monkeypaste/TextTranslator)|
 |[WebSearch](https://github.com/monkeypaste/WebSearch)|
+
+:::info Project Dependencies
+If you want to build any of projects mentioned above you'll need the `MonkeyPaste.Common` package:
+```
+dotnet add package MonkeyPaste.Common --version 1.0.0
+```
+:::
 
 :::tip Divide & Conquer
 They all are fairly simple. Only a few small classes that you can adapt for your own ideas.
@@ -176,8 +186,10 @@ Check the *Remarks* section on each projects readme to see the techincal aspects
 
 
 
+
+
 ## Feedback
-Feel free to raise an issue on one of the repos at [https://github.com/orgs/monkeypaste/repositories](https://github.com/orgs/monkeypaste/repositories)
+Feel free to raise an issue at [https://github.com/orgs/monkeypaste/repositories](https://github.com/orgs/monkeypaste/repositories)
 
 
 

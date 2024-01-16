@@ -7,8 +7,6 @@ sidebar_position: 4
 ## Managing Shortcuts
 All available shortcuts can be found in the *Settings->Shortcuts* menu. 
 
-## Application Shortcuts
-
 ## Route Types
 
 |Type|Description|Global|

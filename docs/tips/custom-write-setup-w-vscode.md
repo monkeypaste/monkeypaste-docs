@@ -3,7 +3,7 @@ In most applications pasting or drag-and-drop from MonkeyPaste works as you woul
 
 <p align="center">
   <video controls height="300">
-    <source src="/docs/build/videos/vs_code_custom_write_from_paste_bar.mp4"/>
+    <source src={require('/videos/vs_code_custom_write_from_paste_bar.mp4').default}/>
   </video>
 </p>
 
@@ -25,6 +25,6 @@ At this point, clicking 'Paste' will paste **nothing** since all write formats a
 The menu should now look something like below and only text will be pasted or dropped into VS Code:
 
 <p align="center">
-  <img src="/docs/build/img/ole_format_button_write_menu_text_button.png" width="300"/>  
+  <img src={require('/img/ole_format_button_write_menu_text_button.png').default} width="300"/>  
 </p>  
 

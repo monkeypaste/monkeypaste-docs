@@ -66,7 +66,16 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
+      zoom: {
+        selector: '.markdown img',
+        background: {
+          light: 'rgb(255, 255, 255)',
+          dark: 'rgb(50, 50, 50)'
+        },
+        config: {
+          // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+        }
+      },
       image: 'img/monkeypaste-social-card.jpg',
       prism: {
         theme: lightTheme,
@@ -147,6 +156,7 @@ const config = {
   },
   themes: ['@docusaurus/theme-mermaid'],
   plugins: [
+    'image-zoom',
     [
       require.resolve("@cmfcmf/docusaurus-search-local"),
       {
