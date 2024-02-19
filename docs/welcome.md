@@ -2,9 +2,11 @@
 sidebar_position: 1
 ---
 
-# Welcome (*under development*)
+# Welcome 
 
-Welcome to the documentation for MonkeyPaste, a clipboard automation and productivity tool. With MonkeyPaste, the clipboard becomes an enriched and organized asset in your workflow.
+Welcome to the docs for MonkeyPaste, a clipboard automation and productivity tool. 
+
+Here you will find details about how to use the app **beyond the intergrated help** which is found by hovering over any of the <img src={require('/img/info.png').default} width="15"/> icons.
 
 ## Supported Platforms
 - Windows 10 (version 1809) and higher
@@ -15,15 +17,15 @@ Welcome to the documentation for MonkeyPaste, a clipboard automation and product
 - ios 'Coming soon'
 - Android 'Coming soon'
 
-:::tip Linux will be $free$
+:::tip Linux will be 100% free
 As a nod to Linux and free-for-use software in general, MonkeyPaste will default to the *'Unlimited'* account plan **free of charge on all Linux desktop platforms.**
 :::
 
 :::info 
-Global shortcut support on Linux is limited to [Passive-mode](shortcuts/index.md#route-types). More info on shortcuts [here](../docs/shortcuts/index.md)
+Global shortcut support on Linux is limited to [Passive-mode](shortcuts/index.md#global-routing-types). More info on shortcuts [here](../docs/shortcuts/index.md)
 :::
 
 
 ## Getting Help
 
-If you encounter any issues or bugs with MonkeyPaste, please open a new issue on [GitHub](https://github.com/monkeypaste/monkeypaste-docs). 
+If you encounter any issues or bugs with MonkeyPaste, please open a new issue in the forum at [Issues](https://monkeypaste.com/forum/index.php?board=6.0) or [Bugs](https://monkeypaste.com/forum/index.php?board=5.0) respectively. 

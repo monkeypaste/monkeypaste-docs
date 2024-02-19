@@ -13,18 +13,23 @@ To fix this:
 1. Reveal MonkeyPaste with VS Code active.
 2. Double-click the clip you want to paste to show the paste bar.
 3. Click the drop-down arrow next to the paste button.
-:::info
-This will show VS Codes clipboard format settings. By default all formats are enabled.
-:::
-4. Uncheck the 'Write' option.
-:::info
-At this point, clicking 'Paste' will paste **nothing** since all write formats are disabled.
-:::
-5. This will uncheck all write formats. Now finally check the 'Text' checkbox under the 'Write' menu to only allow text to be pasted.
+<p class="figure" align="center">
+  <img src={require('/img/vscode_paste_menu.png').default} width="300"/>  
+</p>  
 
-The menu should now look something like below and only text will be pasted or dropped into VS Code:
+:::info
+This will show VS Codes clipboard format settings. By default **all** formats are enabled or **whatever is enabled in the** ***Clipboard Sidebar***.
+:::
+4. Uncheck the 'Write' option (see arrow in screenshot above). This will uncheck **all** write formats.
+:::info
+At this point, clicking 'Paste' while VS Code is targeted will paste **nothing** since all write formats are disabled (unchecked).
+:::
+5. Now finally click the 'Text' clipboard format checkbox to check it under the 'Write' menu so only text will be pasted.
 
-<p align="center">
+The menu should now look something like below and only plain text will be pasted or dropped into VS Code from MonkeyPaste:
+
+<p class="figure" align="left">
   <img src={require('/img/ole_format_button_write_menu_text_button.png').default} width="300"/>  
 </p>  
+
 

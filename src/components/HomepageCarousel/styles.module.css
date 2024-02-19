@@ -1,0 +1,49 @@
+.examples {
+  /* margin-top: 2rem;
+  padding: 2rem 0; */
+  display: block;
+  align-items: center;
+  width: 100%;
+}
+
+.exampleContainer {
+  width: 100%;
+  padding: 15px 0;
+}
+
+.example {
+  display: inline-grid;
+  vertical-align: middle;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 20px;
+  width: 100%;
+}
+
+.example img {
+  max-height: 150px;
+  height: auto;
+}
+
+.example :first-child {
+  text-align: right;
+}
+
+.example :last-child {
+  text-align: left;
+}
+
+.example>div {
+  top: 50%;
+}
+
+
+.examples hr {
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, transparent, gray, transparent) 1;
+}
+
+.container {
+  margin-top: 50px;
+}

@@ -5,32 +5,32 @@ import { useHistory, useLocation } from '@docusaurus/router';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Responsive Design',
+    Svg: require('@site/static/svg/waterfall.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Focus on what matters and get things done quicker with our low-profile
+        layout, designed to minimize the steps between A and B so <b>you stay <em>flowing</em></b>.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Integrated Experience',
+    Svg: require('@site/static/svg/fields.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        MonkeyPaste was designed from the ground up to <b><em>evolve</em> your clipboard </b>
+        into a vault for your bookmarks, notes and much more.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Extensible Environment',
+    Svg: require('@site/static/svg/trees.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        <b>Built to <em>grow</em></b> using a simple plugin system that allows developers
+        to <a href="./docs/plugins/plugin-development">easily extend</a> and users to pick the features they want with point-and-click ease.
       </>
     ),
   },

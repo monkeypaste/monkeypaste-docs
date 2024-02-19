@@ -1,4 +1,4 @@
 ---
 sidebar_position: 6
 ---
-# Walkthroughs
+# Tips, Tricks & Walkthroughs

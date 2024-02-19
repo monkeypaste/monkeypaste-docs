@@ -1,19 +1,15 @@
----
-sidebar_position: 4
----
 # Trash
 The trash collection allows a layer of separation between your working set of clips and ones that are permenently deleted.
 
-:::info
-No permanent changes are the result of trashing a clip. Any hot key, linked tag or other associated data is retained ***until the clip is physically deleted***.
+:::info Trash is a state not a place
+No permanent changes are the result of trashing a clip. Any shortcuts, linked tag or other associated data is retained ***until the clip is permanently deleted***.
 :::
 
 ## Adding clips to trash
 Clips can be moved to the trash in a few ways: 
-- Pressing the <kbd>Del</kbd> key on a selected clip or via 
+- Pressing the <kbd>Del</kbd> key on a selected clip
 - The **Trash** button found in a selected clip's context menu (right-click or hold on mobile) 
-- Drag-and-dropping a clip onto the *Trash* collection
-- Automatically occurs as part of [content recycling](../account/index.md#content-limits)
+- Automatically occurs as part of [content recycling](docs/account/index.md#content)
 
 :::tip
 Selected clips can skip the trash and be permanently deleted using the <kbd>Control</kbd>+<kbd>Del</kbd> shortcut.
